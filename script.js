@@ -1,4 +1,3 @@
-console.log("k")
 const container = document.querySelector(".container")
 const resizeBtn = document.querySelector("#resize");
 
