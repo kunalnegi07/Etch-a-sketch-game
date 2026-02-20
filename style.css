@@ -1,15 +1,15 @@
 *{
     box-sizing: border-box;
     justify-content: center;
-    background-color: #ECEAE6;
+    background-color: #ededed;
 }
 
 .heading{
     font-size: 90px;
     margin-top: 30px;
     margin-bottom: 50px;
-    font-weight: 530;
-    color: #1F1F1F;
+    font-weight: 600;
+    color: #353839;
 }
 
 .maincontainer{
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    margin-left: 150px;
+    margin-left: 155px;
     background-color: white;
 }
 
@@ -53,10 +53,10 @@
 
 #resize{
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 60px;
     border-radius: 10px;
     color: #FFFFFF;
-    background-color: #1F1F1F;
+    background-color: #353839;
     margin-top: 10px;
 }

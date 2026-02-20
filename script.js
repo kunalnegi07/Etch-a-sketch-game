@@ -29,6 +29,7 @@ function resize (){
         newDiv.style.height = `${size}px`;
         newDiv.style.backgroundColor = "white";
         newDiv.addEventListener("mouseover",changeColor);
+        newDiv.style.border = "none";
         container.appendChild(newDiv);
 
         }
@@ -60,6 +61,7 @@ window.onload = function(){
         newDiv.style.height = `${size}px`;
         newDiv.addEventListener("mouseover",changeColor);
         newDiv.style.backgroundColor = "white";
+        newDiv.style.border = "none";
         container.appendChild(newDiv);
         }
     }
