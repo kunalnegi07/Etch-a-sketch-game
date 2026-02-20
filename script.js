@@ -1,5 +1,7 @@
-const container = document.querySelector(".container")
+const container = document.querySelector(".container");
 const resizeBtn = document.querySelector("#resize");
+const cleargame = document.querySelector("#clear");
+
 container.style.userSelect = "none";
 let mouseDown = false;
 
@@ -15,7 +17,7 @@ resizeBtn.addEventListener("click",resize);
 
 
 function resize (){
-    let NoOfGrid = Number(prompt("How many grid's you want? (2-100)","20"));
+    let NoOfGrid = Number(prompt("How many grid's you want? (2-100)","30"));
     if(NoOfGrid >=2 && NoOfGrid <=100){
 
         container.textContent = "";
@@ -47,7 +49,7 @@ function changeColor(e){
 }
 
 window.onload = function(){
-    NoOfGrid = 20;
+    NoOfGrid = 30;
      if(NoOfGrid >=2 && NoOfGrid <=100){
 
         container.textContent = "";
@@ -66,3 +68,24 @@ window.onload = function(){
         }
     }
 }
+
+cleargame.addEventListener("click",window.onload = function(){
+    NoOfGrid = 30;
+     if(NoOfGrid >=2 && NoOfGrid <=100){
+
+        container.textContent = "";
+
+        const size = 500/NoOfGrid;
+
+        for(i = 0; i<NoOfGrid*NoOfGrid ; i++){
+        const newDiv = document.createElement("div");
+        newDiv.classList.add("division");
+        newDiv.style.width = `${size}px`;
+        newDiv.style.height = `${size}px`;
+        newDiv.addEventListener("mouseover",changeColor);
+        newDiv.style.backgroundColor = "white";
+        newDiv.style.border = "none";
+        container.appendChild(newDiv);
+        }
+    }
+});
