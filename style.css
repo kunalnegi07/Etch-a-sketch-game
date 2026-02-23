@@ -68,6 +68,10 @@ button {
     margin-top: 10px;
 }
 
+#resize:hover{
+    opacity: 0.5;
+}
+
 #clear{
     display: flex;
     font-size: 16px;
@@ -76,6 +80,10 @@ button {
     color: #FFFFFF;
     background-color: #353839;
     margin-top: 10px;
+}
+
+#clear:hover{
+    opacity: 0.5;
 }
 
 #rainbow{
@@ -88,6 +96,10 @@ button {
     margin-top: 10px;
 }
 
+#rainbow:hover{
+    opacity: 0.5;
+}
+
 #black{
     display: flex;
     font-size: 16px;
@@ -96,4 +108,8 @@ button {
     color: #FFFFFF;
     background-color: #353839;
     margin-top: 10px;
+}
+
+#black:hover{
+    opacity: 0.5;
 }
