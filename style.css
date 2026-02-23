@@ -77,3 +77,23 @@ button {
     background-color: #353839;
     margin-top: 10px;
 }
+
+#rainbow{
+    display: flex;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #353839;
+    margin-top: 10px;
+}
+
+#black{
+    display: flex;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #353839;
+    margin-top: 10px;
+}
