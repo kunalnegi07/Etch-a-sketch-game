@@ -4,6 +4,8 @@ const cleargame = document.querySelector("#clear");
 const rainbowbtn = document.querySelector("#rainbow");
 const blackbtn = document.querySelector("#black");
 
+let currentOpacity = 0.1;
+
 container.style.userSelect = "none";
 let mouseDown = false;
 let currentMode = "black";
@@ -34,7 +36,8 @@ function createGrid(NoOfGrid){
         newDiv.style.width = `${size}px`;
         newDiv.style.height = `${size}px`;
         newDiv.style.backgroundColor = "white";
-        newDiv.addEventListener("mouseover",changeColor);
+        newDiv.style.opacity = 0.1;
+        newDiv.addEventListener("mouseover",(e) => draw(e,newDiv));
         newDiv.style.border = "none";
         container.appendChild(newDiv);
 
@@ -53,7 +56,7 @@ function resize (){
 }
 
 
-function changeColor(e){
+function draw(e,div){
 
     if (e.type === "mouseover" && !mouseDown) return;
 
@@ -61,6 +64,10 @@ function changeColor(e){
         e.target.style.backgroundColor = generatingRandomRgbColor();
     }else{
         e.target.style.backgroundColor = "black";
+    }
+    let opacity = Number(div.style.opacity);
+    if (opacity < 1) {
+        div.style.opacity = opacity + 0.1;
     }
 }
 
